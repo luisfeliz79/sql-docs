@@ -31,6 +31,9 @@ ms.author: maghan
      The database login for the old account will not be removed automatically. Be sure to remove accounts that are no longer in use. For more information, see [Administer a Report Server Database &#40;SSRS Native Mode&#41;](../../reporting-services/report-server/administer-a-report-server-database-ssrs-native-mode.md) in SQL Server Books Online.  
   
      Granting database permissions to a new service account only occurs if you configured the report server database connection to use the service account in the first place. If you configured the report server database connection to use a domain user account or a [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] database login, the connection information is not affected by the service account update.  
+     
+    > [!NOTE]  
+    >  An account with SQL administrative privileges (sysadmin) will be required for this change. 
   
 -   Automatically updates the encryption key to include the profile information of the new account.  
   
